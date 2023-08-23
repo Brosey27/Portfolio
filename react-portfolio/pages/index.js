@@ -1,7 +1,14 @@
 import Head from "next/head";
-import {BsFillMoonStarsFill} from "react-icons/bs"
-import {AiFillTwitterCircle, AiFillLinkedin, AiFillYoutube} from "react-icons/ai"
-
+import {BsFillMoonStarsFill} from "react-icons/bs";
+import {AiFillTwitterCircle, AiFillLinkedin, AiFillYoutube} from "react-icons/ai";
+import Image from "next/image";
+import samurai from "../public/samurai.jpeg";
+import HTML from "../public/html.svg";
+import CSS from "../public/css.svg";
+import JS from "../public/JS.svg";
+import REACT from "../public/react.svg";
+import TAILWIND from "../public/tailwind.svg";
+import NEXTJS from "../public/nextjs.svg";
 export default function Home() {
   return (
     <div>
@@ -11,28 +18,56 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
     
-    <main className="bg-gradient-to-r from-black to-purple-950 px-10 ">
+    <main className="bg-white">
       <section className="min-h-screen">
        <nav className="py-10 mb-12 flex justify-between">
-        <h1 className="text-xl font-burtons">Broseph.dev</h1>
+        <h1 className="text-xl font-burtons text-teal-500">Broseph.dev</h1>
         <ul className="flex items-center">
           <li>
-            <BsFillMoonStarsFill className="cursor-pointer text-xl"/>
+            <BsFillMoonStarsFill className="cursor-pointer text-xl text-teal-500"/>
           </li>
           <li><a className="bg-gradient-to-r from-cyan-500 to-teal-500 px-4 text-white py-2 rounded-md ml-8"href="#">Resume</a></li>
         </ul>
 
        </nav>
-       <div className="text-center p-10">
-        <h2 className=" text-5xl py-2 text-teal-600 font-medium">Jordan Brose</h2>
-        <h3 className="text-white">Front End  Developer</h3>
-        <p>Based in Australia</p>
-       </div>
-       <div>
+       <div className="flex p-10">
+       <div className="flex flex-col justify-center">
+        <h2 className=" text-5xl py-2 text-teal-600 font-medium">Front End Developer 👋</h2>
+        <p className="text-md py-5 leading-8 text-gray-800">Hi, I'm Jordan Brose. A passionate Front-end React Developer based in Australia.  📍
+
+</p>
+       
+       <div className="text-5xl flex  gap-12 py-2">
         <a className="text-blue-500 flex"href="#"><AiFillTwitterCircle/></a>
         <a className="text-blue-500 flex"href="#"><AiFillLinkedin/></a>
         <a className="text-blue-500 flex"href="#"><AiFillYoutube/></a>
        </div>
+       </div>
+       <div className="relative flex justify-center items-center text-blue mx-auto ">
+        <Image alt="samurai-logo" src={samurai} className="w-80 h-100 ml-10 object-cover"/>
+       </div>
+      
+       </div>
+       
+      </section>
+      {/* Tech Stack*/}
+      <section className="flex items-center">
+  <h2 className="text-teal-900 text-xl">Tech Stack | </h2>
+  <div className="flex ml-7 gap-10">
+    <Image alt="html-logo" src={HTML} className="w-10 h-10"/>
+    <Image alt="css-logo" src={CSS} className="w-10 h-10"/>
+    <Image alt="js-logo" src={JS} className="w-10 h-10"/>
+    <Image alt="react-logo" src={REACT} className="w-10 h-10"/>
+    <Image alt="tailwind-logo" src={TAILWIND} className="w-10 h-10"/>
+    <Image alt="nextjs-logo" src={NEXTJS} className="w-10 h-10"/>
+  </div>
+</section>
+      {/* About me */}
+      <section>
+        <div>
+        <h3 className="text-xl py-2 text-teal-600">About Me</h3>
+        <p className="text-md py-5 leading-8 text-gray-700">As a Junior Front-End Developer, I possess an impressive arsenal of skills in HTML, CSS, JavaScript, React, Tailwind and Next.JS. I excel in designing and maintaining responsive websites that offer a smooth user experience. My expertise lies in crafting dynamic, engaging interfaces through writing clean and optimized code and utilizing cutting-edge development tools and techniques. I am also a team player who thrives in collaborating with cross-functional teams to produce outstanding web applications.</p>
+        </div>
       </section>
     </main>
     </div>
