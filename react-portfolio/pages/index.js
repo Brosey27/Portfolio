@@ -37,32 +37,22 @@ export default function Home() {
   </ul>
 </nav>
 {/* Home */}
-<div className="flex flex-col md:flex-row-reverse items-center"> {/* Reversed flex order */}
-   <div className="relative flex justify-center items-center text-blue mx-auto mt-20 md:h-96 md:w-96"> {/* Responsive alignment */}
+<div className="flex flex-col md:flex-row-reverse items-center pt-32"> {/* Reversed flex order */}
+   <div className="relative flex justify-center items-center text-blue mx-auto mt-20 md:h-96 md:w-96 lg:h-100 w-100"> {/* Responsive alignment */}
       <Image alt="samurai-logo" src={samurai} className="w-80 h-100 object-cover" />
    </div>
    <div className="flex flex-col justify-center md:ml-8"> {/* Adjusted margin */}
       <h2 className="text-5xl py-2 text-teal-600 font-medium md:text-6xl flex text-center">Front End Developer 👋</h2>
       <p className="text-md py-5 leading-8 text-gray-800 md:text-lg max-w-lg flex text-center">Hi, I'm Jordan Brose. A passionate Front-end React Developer based in Australia. 📍</p>
-      <div className="flex justify-center gap-8  md:gap-0 "> {/* Responsive alignment */}
+      <div className="flex justify-center gap-8  md:gap-0 lg:gap-0 xl:gap-0 "> {/* Responsive alignment */}
          <a className="text-blue-500 text-3xl" href="#"><AiFillGithub /></a> {/* Increased text size */}
          <a className="text-blue-500 text-3xl" href="#"><AiFillLinkedin /></a> {/* Increased text size */}
       </div>
    </div>
 </div>
     </section>
-    {/* About me */}
-    <section className="flex items-center mt-0  pb-48" id="about">
-
-<div className="ml-8">
-  <h3 className="text-md text-teal-600">About Me</h3>
-  <p className="flex-1 text-sm py-2 leading-6 text-gray-700">
-    As a Junior Front-End Developer, I possess an impressive arsenal of skills in HTML, CSS, JavaScript, React, Tailwind and Next.JS. I excel in designing and maintaining responsive websites that offer a smooth user experience. My expertise lies in crafting dynamic, engaging interfaces through writing clean and optimized code and utilizing cutting-edge development tools and techniques. I am also a team player who thrives in collaborating with cross-functional teams to produce outstanding web applications.
-  </p>
-</div>
-</section>
-      {/* Tech Stack*/}
-      <section className=" px-4 text-center flex items-center mt-0">
+     {/* Tech Stack*/}
+     <section className=" px-4 text-center flex items-center mt-0">
   <h2 className="text-teal-900 text-xl">Tech Stack </h2>
   <div className="flex ml-1 gap-3 md:px-20 lg:px-40">
     <Image alt="html-logo" src={HTML} className="w-10 h-10"/>
@@ -73,19 +63,34 @@ export default function Home() {
     <Image alt="nextjs-logo" src={NEXTJS} className="w-10 h-10"/>
   </div>
 </section>
+    {/* About me */}
+    <section className="flex items-center mt-0  pt-32 " id="about">
+
+<div className="ml-8">
+  <h3 className="text-lg text-teal-600">About Me</h3>
+  <p className="flex-1 text-md py-2 leading-6 text-gray-700">
+    As a Junior Front-End Developer, I possess an impressive arsenal of skills in HTML, CSS, JavaScript, React, Tailwind and Next.JS. I excel in designing and maintaining responsive websites that offer a smooth user experience. My expertise lies in crafting dynamic, engaging interfaces through writing clean and optimized code and utilizing cutting-edge development tools and techniques. I am also a team player who thrives in collaborating with cross-functional teams to produce outstanding web applications.
+  </p>
+</div>
+</section>
+     
       
 {/* Portfolio */}
 <section id="portfolio"  >
   <div className="bg-gradient-to-r from-cyan-500 to-teal-500 ">
   <h3 className="text-3xl text-white py-1 mt-48 flex justify-center">Portfolio</h3>
-  <p className="text-md text-gray-800 py-1 mb-20 flex justify-center">Each project is a unique piece of development 🧩</p>
+  <p className="text-lg text-white py-1 mb-20 flex justify-center">Each project is a unique piece of development 🧩</p>
   </div>
   <div className="md:flex lg:flex gap-10">
-    <div className="border-spacing-1 shadow-md border-teal-300">
-      <h2 className="text-md py-5 leading-8 text-teal-600 p-28 md:text-lg max-w-lg mx-auto flex text-center">Cryptocurrency Webpage</h2>
-      <Image src={LAPTOP} className="flex justify-center items-center"/>
-      <p className="text-sm text-gray-800 py-1">I built this project with vanilla HTML, CSS and JS. Through this project I gained more experience applying API's and animation effects.</p>
-    </div>
+  <div className="border-spacing-1 shadow-md border-teal-300">
+   <div className="relative">
+      <Image src={LAPTOP} className="w-full h-auto max-w-xl mx-auto" />
+      <div className="absolute inset-0 flex justify-center items-center"></div>
+   </div>
+   <p className="text-sm text-gray-800 py-1 mx-4 md:mx-auto max-w-xl">
+      I built this project with vanilla HTML, CSS and JS. Through this project I gained more experience applying APIs and animation effects.
+   </p>
+</div>
     <div className="border-spacing-1 shadow-md border-teal-300">
       <h2 className="text-md py-5 leading-8 text-teal-600  md:text-lg max-w-lg mx-auto flex justify-center text-center">Google Clone</h2>
       <Image src={LAPTOP2} className="flex justify-center items-center "/>
