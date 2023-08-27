@@ -109,7 +109,7 @@ export default function ContactSignUp() {
               <a href="#"><AiFillMail /></a>
             </div>
             <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96">
-              <Image alt="home-logo" src={PROFILE} className="fill object-cover"/>
+              <Image alt="home-logo" src={PROFILE} className="fill object-cover" priority={true} />
             </div>
           </div>
         </section>
