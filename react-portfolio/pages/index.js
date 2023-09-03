@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import Image from "next/image";
-import PROFILE from "../public/jordan.jpeg";
+import PROFILE from "../public/cartoonme.svg";
 import design from "../public/design.jpeg";
 import code from "../public/code.svg";
 import consulting from "../public/consulting.png";
@@ -13,7 +13,7 @@ import JS from "../public/JS.svg";
 import REACT from "../public/react.svg";
 import TAILWIND from "../public/tailwind.svg";
 import NEXTJS from "../public/nextjs.svg";
-import CRYPTO from "../public/Crypto.png";
+import CRYPTO from "../public/Cryptowebpage.png";
 import Google from "../public/GoogleClone.png";
 import contact from "../public/contact.svg";
 import navigate from "../public/navigate.svg";
@@ -23,7 +23,9 @@ import figma from "../public/Figma2.png";
 import miro from "../public/miro.webp";
 import adobeillustrator from "../public/AdobeIllustrator.svg";
 import bash from "../public/bash.png";
-import photoshop from"../public/photoshop.png";
+import photoshop from "../public/photoshop.png";
+import datafinance from "../public/datafinance.png";
+import financetracker from "../public/FinanceTracker.png";
 
 
 import {
@@ -96,12 +98,16 @@ export default function ContactSignUp() {
 
           {/* Home */}
           <div className="text-center p-10 py-10">
+          <h2 className="text-5xl py-2 text-teal-600 font-medium dark:text-teal-400 md:text-6xl waving">
+             Hi, I'm <span className="text-gray-600 dark:text-white">Jordan</span>
+        
+            </h2>
             <h2 className="text-5xl py-2 text-teal-600 font-medium dark:text-teal-400 md:text-6xl waving">
-            Front End Developer <span role="img" aria-label="Wave" className="wave-emoji inline-block animate-wave">👋</span>
+             A Front-End Web Developer <span role="img" aria-label="Wave" className="wave-emoji inline-block animate-wave">👋</span>
         
             </h2>
             <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
-              Hi, I'm Jordan Brose. A passionate Front-end React Developer based in Australia. 📍
+            I specialise in building and designing exceptional digital experiences. 
             </p>
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
               <a href="https://github.com/Brosey27"><AiFillGithub /></a>
@@ -119,14 +125,14 @@ export default function ContactSignUp() {
           <div>
             <h3 className="text-3xl py-1 text-teal-500 ">About Me</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-            As a Junior Front-End Developer, I possess an impressive 
+            As a self taught Front-End Developer, I possess an impressive 
               <span className="text-teal-500"> arsenal </span>
               of <span className="text-teal-500">skills </span>
               in HTML, CSS, JavaScript, React, Tailwind and Next.JS. I excel in designing and maintaining responsive websites that offer a smooth user experience. My expertise lies in crafting dynamic, engaging interfaces through writing clean and optimized code and utilizing cutting-edge development tools and techniques. I am also a team player who thrives in collaborating with cross-functional teams to produce outstanding web applications.
             </p>
           </div>
 
-          {/* Tech Stack */}
+          {/* Coding Technologies */}
           <div className="lg:flex gap-10">
           <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
               <Image alt="code-logo"
@@ -135,30 +141,35 @@ export default function ContactSignUp() {
                 Always improving and adapting
               </h3>
               <p className="py-2 text-black">
-                I understand the importance of being flexible in the tech industry. This is why I am continuously learning new applications in order to maintain peak efficiency.
+                I understand the importance of being flexible in the tech industry. This is why I am continuously learning and implementing new technologies in order to maintain peak efficiency.
               </p>
-            <h2 className="text-teal-600 py-4 text-xl">Tech Stack |</h2>
-            <div className="flex ml-1 gap-3 items-center md:px-20 lg:px-40">
-              <Image alt="html-logo" src={HTML} className="w-10 h-10"/>
-              <Image alt="css-logo" src={CSS} className="w-10 h-10"/>
-              <Image alt="js-logo" src={JS} className="w-10 h-10"/>
-              <Image alt="react-logo" src={REACT} className="w-10 h-10"   onError={(e) => console.log("Image failed to load:", e)}/>
-              <Image alt="tailwind-logo" src={TAILWIND} className="w-10 h-10"/>
-              <Image alt="nextjs-logo" src={NEXTJS} className="w-10 h-10"/>
-              </div>
+               {/* Tech Stack */}
+          <div className="flex ml-1 gap-3 items-center md:px-20 lg:px-40 flex-col"> {/* Add 'flex-col' class to center items vertically */}
+          <h2 className="text-teal-600 py-4 text-xl">Tech Stack</h2>
+            <div className="flex gap-3 items-center">
+              <Image alt="html-logo" src={HTML} className="w-10 h-10" />
+              <Image alt="css-logo" src={CSS} className="w-10 h-10" />
+              <Image alt="js-logo" src={JS} className="w-10 h-10" />
+              <Image alt="react-logo" src={REACT} className="w-10 h-10" onError={(e) => console.log("Image failed to load:", e)} />
+              <Image alt="tailwind-logo" src={TAILWIND} className="w-10 h-10" />
+              <Image alt="nextjs-logo" src={NEXTJS} className="w-10 h-10" />
+            </div>
+          </div>
 
               {/* Design Stack */}
-              <h2 className="text-teal-600 py-4 text-xl">Design Stack |</h2>
-            <div className="flex ml-1 gap-3 items-center md:px-20 lg:px-40">
-              <Image alt="canva-logo" src={canva} className="w-10 h-10"/>
-              <Image alt="chatgpt-logo" src={chatgpt} className="w-10 h-10"/>
-              <Image alt="figma-logo" src={figma} className="w-10 h-10"/>
-              <Image alt="adobeillustrator-logo" src={adobeillustrator} className="w-10 h-10"/>
-              <Image alt="miro-logo" src={miro} className="w-10 h-10"/>
-              <Image alt="photoshop-logo" src={photoshop} className="w-10 h-10"/>
+              <div className="flex ml-1 gap-3 items-center md:px-20 lg:px-40 flex-col"> {/* Add 'flex-col' class to center items vertically */}
+                <h2 className="text-teal-600 py-4 text-xl">Design Stack</h2>
+                <div className="flex gap-3 items-center">
+                  <Image alt="canva-logo" src={canva} className="w-10 h-10" />
+                  <Image alt="chatgpt-logo" src={chatgpt} className="w-10 h-10" />
+                  <Image alt="figma-logo" src={figma} className="w-10 h-10" />
+                  <Image alt="adobeillustrator-logo" src={adobeillustrator} className="w-10 h-10" />
+                  <Image alt="miro-logo" src={miro} className="w-10 h-10" />
+                  <Image alt="photoshop-logo" src={photoshop} className="w-10 h-10" />
+                </div>
+              </div>
             </div>
-            </div>
-            </div> 
+          </div>
         </section>
 
         {/* Projects */}
@@ -175,8 +186,34 @@ export default function ContactSignUp() {
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap ">
             {/* Project 1 */}
+          <div className="basis-1/3 flex-1 shadow-md border-2 overflow-hidden dark:border-gray-700">
+            
+              <a href="https://finance-tracker-v2-pi.vercel.app/#stats"><Image
+               alt="finance-tracker"  src={financetracker}
+               className="rounded-lg object-cover w-100 h-100 responsive"
+              /></a>
+              <p className="text-sm py-2 leading-8 text-gray-800 dark:text-gray-200 flex text-center">This is a minimalistic production-ready Finance Tracker app built with Next.js 13, Tailwind CSS and Firebase. The app includes security using user authentication, protected routes, data storage using Firebase Firestore and the ability to login via google or a demo user account.</p>
+              <div className="text-lg flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
+              <a href="https://github.com/Brosey27/finance-tracker-v2"><AiFillGithub /></a>
+              <a href="https://finance-tracker-v2-pi.vercel.app/#stats"><AiFillCaretRight /></a>
+            </div>
+            </div>
+            {/* Project 2 */}
             <div className="basis-1/3 flex-1 shadow-md border-2 overflow-hidden dark:border-gray-700">
-            <h1 className="text-3xl py-1 text-gray-700 dark:text-white flex justify-center items-center">Cryptocurrency Webpage 🪙</h1>
+            
+              <a href="https://data-finance-2-rdfy10oht-brosey27.vercel.app/"><Image
+               alt="google-project"  src={datafinance}
+               className="rounded-lg object-cover w-100 h-100 responsive"
+              /></a>
+              <p className="text-sm py-2 leading-8 text-gray-800 dark:text-gray-200 flex text-center">This fully responsive project was built by employing React, Next.js and Tailwind. It also uses heavy js coding to create a typewriter effect for some text animation in the Hero section. UseState hook to toggle the mobile side drawer menu. Import “React-Icons” dependency for social icons. Incorporates both flexbox and grid layouts.</p>
+              <div className="text-lg flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
+              <a href="https://github.com/Brosey27/Data-Finance"><AiFillGithub /></a>
+              <a href="https://data-finance-2-rdfy10oht-brosey27.vercel.app/"><AiFillCaretRight /></a>
+            </div>
+            </div>
+            {/* Project 3 */}
+            <div className="basis-1/3 flex-1 shadow-md border-2 overflow-hidden dark:border-gray-700">
+           
               <a href="https://brosey27.github.io/Cryptocurrency-Webpage/"><Image
               alt="crypto-project" src={CRYPTO}
                 className="rounded-lg object-cover responsive w-100 h-100"
@@ -187,9 +224,9 @@ export default function ContactSignUp() {
               <a href="https://brosey27.github.io/Cryptocurrency-Webpage/"><AiFillCaretRight /></a>
             </div>
             </div>
-            {/* Project 2 */}
+            {/* Project 4*/}
             <div className="basis-1/3 flex-1 shadow-md border-2 overflow-hidden dark:border-gray-700">
-            <h1 className="text-3xl py-1 text-gray-700 dark:text-white flex justify-center items-center">Functional Google Search 🌐</h1>
+            
               <a href="https://brosey27.github.io/GoogleClone/"><Image
                alt="google-project"  src={Google}
                className="rounded-lg object-cover w-100 h-100 responsive"
