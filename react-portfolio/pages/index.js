@@ -26,6 +26,10 @@ import bash from "../public/bash.png";
 import photoshop from "../public/photoshop.png";
 import datafinance from "../public/datafinance.png";
 import financetracker from "../public/FinanceTracker.png";
+import cryptowebpage from "../public/Cryptocurrency.png";
+import FIREBASE from "../public/firebase.png";
+import NODE from "../public/nodejs.svg";
+import EXPRESS from "../public/express.png";
 
 
 import {
@@ -103,7 +107,7 @@ export default function ContactSignUp() {
         
             </h2>
             <h2 className="text-5xl py-2 text-teal-600 font-bold dark:text-teal-400 md:text-6xl waving">
-             A Front-End Web Developer <span role="img" aria-label="Wave" className="wave-emoji inline-block animate-wave">👋</span>
+             A <span className="text-gray-600 dark:text-white">Full Stack</span> Web <span className="text-gray-600 dark:text-white">Developer</span> <span role="img" aria-label="Wave" className="wave-emoji inline-block animate-wave">👋</span>
         
             </h2>
             <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
@@ -124,8 +128,8 @@ export default function ContactSignUp() {
         <section>
           <div>
             <h3 className="text-3xl py-1 text-teal-500 font-bold">About Me</h3>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-            As a self taught Front-End Developer, I possess an impressive 
+            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200 font-medium">
+            As a self taught Web Developer, I possess an impressive 
               <span className="text-teal-500"> arsenal </span>
               of <span className="text-teal-500">skills </span>
               in HTML, CSS, JavaScript, React, Tailwind and Next.JS. I excel in designing and maintaining responsive websites that offer a smooth user experience. My expertise lies in crafting dynamic, engaging interfaces through writing clean and optimized code and utilizing cutting-edge development tools and techniques. I am also a team player who thrives in collaborating with cross-functional teams to produce outstanding web applications.
@@ -137,15 +141,15 @@ export default function ContactSignUp() {
           <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
               <Image alt="code-logo"
               src={code} className="w-20 h-20"/>
-              <h3 className="text-lg font-medium pt-8 pb-2 text-black font-bold">
+              <h3 className="text-lg font-medium pt-8 pb-2 text-black">
                 Always improving and adapting
               </h3>
               <p className="py-2 text-black">
                 I understand the importance of being flexible in the tech industry. This is why I am continuously learning and implementing new technologies in order to maintain peak efficiency.
               </p>
-               {/* Tech Stack */}
+               {/* Front-end Tech Stack */}
           <div className="flex ml-1 gap-3 items-center md:px-20 lg:px-40 flex-col"> {/* Add 'flex-col' class to center items vertically */}
-          <h2 className="text-teal-600 py-4 text-xl font-bold">Tech Stack</h2>
+          <h2 className="text-teal-600 py-4 text-xl font-bold">Front-End Tech Stack</h2>
             <div className="flex gap-3 items-center">
               <Image alt="html-logo" src={HTML} className="w-10 h-10" />
               <Image alt="css-logo" src={CSS} className="w-10 h-10" />
@@ -153,6 +157,17 @@ export default function ContactSignUp() {
               <Image alt="react-logo" src={REACT} className="w-10 h-10" onError={(e) => console.log("Image failed to load:", e)} />
               <Image alt="tailwind-logo" src={TAILWIND} className="w-10 h-10" />
               <Image alt="nextjs-logo" src={NEXTJS} className="w-10 h-10" />
+            </div>
+          </div>
+
+            {/* Back-end Tech Stack */}
+            <div className="flex ml-1 gap-3 items-center md:px-20 lg:px-40 flex-col"> {/* Add 'flex-col' class to center items vertically */}
+          <h2 className="text-teal-600 py-4 text-xl font-bold">Back-End Tech Stack</h2>
+            <div className="flex gap-3 items-center">
+              <Image alt="html-logo" src={FIREBASE} className="w-10 h-10" />
+              <Image alt="css-logo" src={NODE} className="w-10 h-10" />
+              <Image alt="js-logo" src={EXPRESS} className="w-10 h-10" />
+             
             </div>
           </div>
 
@@ -176,12 +191,12 @@ export default function ContactSignUp() {
         <section className="py-10">
           <div>
             <h4 className="text-3xl py-1 text-teal-500 dark:text-teal-500 font-bold">Each project is a unique piece of development 🧩</h4>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
+            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200 font-medium">
               Since the beginning of my journey as a self-taught
               developer, I have always tried  to 
               <span className="text-teal-500"> challenge </span>
               myself to create <span className="text-teal-500">useful </span>
-              digital products for consumer use. Here are a handful of projects that outline my development into a competent website designer.
+              digital products for consumer use. Here are a handful of projects that outline my development.
             </p>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap ">
@@ -213,15 +228,15 @@ export default function ContactSignUp() {
             </div>
             {/* Project 3 */}
             <div className="basis-1/3 flex-1 shadow-md border-2 overflow-hidden dark:border-gray-700">
-              <a href="https://brosey27.github.io/Cryptocurrency-Webpage/"><Image
-              alt="crypto-project" src={CRYPTO}
+              <a href="https://crypto-webpage.vercel.app/"><Image
+              alt="crypto-project" src={cryptowebpage}
                 className="rounded-lg object-cover responsive w-100 h-100"
               /></a>
                <h2 className="text-teal-500 text-2xl text-center pt-3 font-bold">Crypto Webpage</h2>
-              <p className="text-sm py-2 leading-8 text-gray-800 dark:text-gray-200 flex text-center">Cointopia is a crypto app that allows users to search for information about various cryptocurrencies in real-time. This project allowed me to become more efficient in incorporating API's and animation to my web design via vanilla HTML, CSS and JS.</p>
+              <p className="text-sm py-2 leading-8 text-gray-800 dark:text-gray-200 flex text-center">Refi is a crypto app that allows users to search for information about various cryptocurrencies in real-time. This project allowed me to become more efficient in incorporating API's into my web design by utilising React.</p>
               <div className="text-lg flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
-              <a href="https://github.com/Brosey27/Cryptocurrency-Webpage"><AiFillGithub /></a>
-              <a href="https://brosey27.github.io/Cryptocurrency-Webpage/"><AiFillCaretRight /></a>
+              <a href="https://github.com/Brosey27/Crypto-Webpage"><AiFillGithub /></a>
+              <a href="https://crypto-webpage.vercel.app/"><AiFillCaretRight /></a>
             </div>
             </div>
             {/* Project 4*/}
