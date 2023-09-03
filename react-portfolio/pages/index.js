@@ -98,11 +98,11 @@ export default function ContactSignUp() {
 
           {/* Home */}
           <div className="text-center p-10 py-10">
-          <h2 className="text-5xl py-2 text-teal-600 font-medium dark:text-teal-400 md:text-6xl waving">
+          <h2 className="text-5xl py-2 text-teal-600  dark:text-teal-400 md:text-6xl waving font-bold">
              Hi, I'm <span className="text-gray-600 dark:text-white">Jordan</span>
         
             </h2>
-            <h2 className="text-5xl py-2 text-teal-600 font-medium dark:text-teal-400 md:text-6xl waving">
+            <h2 className="text-5xl py-2 text-teal-600 font-bold dark:text-teal-400 md:text-6xl waving">
              A Front-End Web Developer <span role="img" aria-label="Wave" className="wave-emoji inline-block animate-wave">👋</span>
         
             </h2>
@@ -123,7 +123,7 @@ export default function ContactSignUp() {
         {/* About */}
         <section>
           <div>
-            <h3 className="text-3xl py-1 text-teal-500 ">About Me</h3>
+            <h3 className="text-3xl py-1 text-teal-500 font-bold">About Me</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
             As a self taught Front-End Developer, I possess an impressive 
               <span className="text-teal-500"> arsenal </span>
@@ -137,7 +137,7 @@ export default function ContactSignUp() {
           <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
               <Image alt="code-logo"
               src={code} className="w-20 h-20"/>
-              <h3 className="text-lg font-medium pt-8 pb-2 text-black ">
+              <h3 className="text-lg font-medium pt-8 pb-2 text-black font-bold">
                 Always improving and adapting
               </h3>
               <p className="py-2 text-black">
@@ -145,7 +145,7 @@ export default function ContactSignUp() {
               </p>
                {/* Tech Stack */}
           <div className="flex ml-1 gap-3 items-center md:px-20 lg:px-40 flex-col"> {/* Add 'flex-col' class to center items vertically */}
-          <h2 className="text-teal-600 py-4 text-xl">Tech Stack</h2>
+          <h2 className="text-teal-600 py-4 text-xl font-bold">Tech Stack</h2>
             <div className="flex gap-3 items-center">
               <Image alt="html-logo" src={HTML} className="w-10 h-10" />
               <Image alt="css-logo" src={CSS} className="w-10 h-10" />
@@ -158,7 +158,7 @@ export default function ContactSignUp() {
 
               {/* Design Stack */}
               <div className="flex ml-1 gap-3 items-center md:px-20 lg:px-40 flex-col"> {/* Add 'flex-col' class to center items vertically */}
-                <h2 className="text-teal-600 py-4 text-xl">Design Stack</h2>
+                <h2 className="text-teal-600 py-6 text-xl font-bold">Design Stack</h2>
                 <div className="flex gap-3 items-center">
                   <Image alt="canva-logo" src={canva} className="w-10 h-10" />
                   <Image alt="chatgpt-logo" src={chatgpt} className="w-10 h-10" />
@@ -175,7 +175,7 @@ export default function ContactSignUp() {
         {/* Projects */}
         <section className="py-10">
           <div>
-            <h4 className="text-3xl py-1 text-teal-500 dark:text-teal-500 ">Each project is a unique piece of development 🧩</h4>
+            <h4 className="text-3xl py-1 text-teal-500 dark:text-teal-500 font-bold">Each project is a unique piece of development 🧩</h4>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
               Since the beginning of my journey as a self-taught
               developer, I have always tried  to 
@@ -187,11 +187,11 @@ export default function ContactSignUp() {
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap ">
             {/* Project 1 */}
           <div className="basis-1/3 flex-1 shadow-md border-2 overflow-hidden dark:border-gray-700">
-            
               <a href="https://finance-tracker-v2-pi.vercel.app/#stats"><Image
                alt="finance-tracker"  src={financetracker}
                className="rounded-lg object-cover w-100 h-100 responsive"
               /></a>
+              <h2 className="text-teal-500 text-2xl text-center pt-3 font-bold">Finance Tracker</h2>
               <p className="text-sm py-2 leading-8 text-gray-800 dark:text-gray-200 flex text-center">This is a minimalistic production-ready Finance Tracker app built with Next.js 13, Tailwind CSS and Firebase. The app includes security using user authentication, protected routes, data storage using Firebase Firestore and the ability to login via google or a demo user account.</p>
               <div className="text-lg flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
               <a href="https://github.com/Brosey27/finance-tracker-v2"><AiFillGithub /></a>
@@ -200,11 +200,11 @@ export default function ContactSignUp() {
             </div>
             {/* Project 2 */}
             <div className="basis-1/3 flex-1 shadow-md border-2 overflow-hidden dark:border-gray-700">
-            
               <a href="https://data-finance-2-rdfy10oht-brosey27.vercel.app/"><Image
                alt="google-project"  src={datafinance}
                className="rounded-lg object-cover w-100 h-100 responsive"
               /></a>
+               <h2 className="text-teal-500 text-2xl text-center pt-3 font-bold">Data Finance</h2>
               <p className="text-sm py-2 leading-8 text-gray-800 dark:text-gray-200 flex text-center">This fully responsive project was built by employing React, Next.js and Tailwind. It also uses heavy js coding to create a typewriter effect for some text animation in the Hero section. UseState hook to toggle the mobile side drawer menu. Import “React-Icons” dependency for social icons. Incorporates both flexbox and grid layouts.</p>
               <div className="text-lg flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
               <a href="https://github.com/Brosey27/Data-Finance"><AiFillGithub /></a>
@@ -213,11 +213,11 @@ export default function ContactSignUp() {
             </div>
             {/* Project 3 */}
             <div className="basis-1/3 flex-1 shadow-md border-2 overflow-hidden dark:border-gray-700">
-           
               <a href="https://brosey27.github.io/Cryptocurrency-Webpage/"><Image
               alt="crypto-project" src={CRYPTO}
                 className="rounded-lg object-cover responsive w-100 h-100"
               /></a>
+               <h2 className="text-teal-500 text-2xl text-center pt-3 font-bold">Crypto Webpage</h2>
               <p className="text-sm py-2 leading-8 text-gray-800 dark:text-gray-200 flex text-center">Cointopia is a crypto app that allows users to search for information about various cryptocurrencies in real-time. This project allowed me to become more efficient in incorporating API's and animation to my web design via vanilla HTML, CSS and JS.</p>
               <div className="text-lg flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
               <a href="https://github.com/Brosey27/Cryptocurrency-Webpage"><AiFillGithub /></a>
@@ -226,11 +226,11 @@ export default function ContactSignUp() {
             </div>
             {/* Project 4*/}
             <div className="basis-1/3 flex-1 shadow-md border-2 overflow-hidden dark:border-gray-700">
-            
               <a href="https://brosey27.github.io/GoogleClone/"><Image
                alt="google-project"  src={Google}
                className="rounded-lg object-cover w-100 h-100 responsive"
               /></a>
+              <h2 className="text-teal-500 text-2xl text-center pt-3 font-bold">Google Clone</h2>
               <p className="text-sm py-2 leading-8 text-gray-800 dark:text-gray-200 flex text-center">In this project I utilised vanilla HTML,CSS and JS to build the google search engine from scratch and added functionality where the user can search anything and a new tab would be opened up redirecting the user to their relevant search query.</p>
               <div className="text-lg flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
               <a href="https://github.com/Brosey27/GoogleClone"><AiFillGithub /></a>
@@ -255,7 +255,7 @@ export default function ContactSignUp() {
 
     {/* Contact Form */}
     <div className="form-container p-4 md:w-1/2 lg:w-2/3 flex flex-col justify-center items-center">
-      <h1 className="sign-up-h1 text-center mb-4 text-3xl text-black dark:text-white">Contact Me</h1>
+      <h1 className="sign-up-h1 text-center mb-4 text-3xl text-black dark:text-white font-bold">Contact Me</h1>
       {submitted ? (
         <p className="text-green-500">Message sent successfully!</p>
       ) : (
