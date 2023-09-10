@@ -30,6 +30,7 @@ import cryptowebpage from "../public/Cryptocurrency.png";
 import FIREBASE from "../public/firebase.png";
 import NODE from "../public/nodejs.svg";
 import EXPRESS from "../public/express.png";
+import Project4 from "../public/Project4.png";
 
 
 import {
@@ -107,7 +108,7 @@ export default function ContactSignUp() {
         
             </h2>
             <h2 className="text-5xl py-2 text-teal-600 font-bold dark:text-teal-400 md:text-6xl waving">
-             A <span className="text-gray-600 dark:text-white">Full Stack</span> Web <span className="text-gray-600 dark:text-white">Developer</span> <span role="img" aria-label="Wave" className="wave-emoji inline-block animate-wave">👋</span>
+             A <span className="text-gray-600 dark:text-white">Front End</span> Web <span className="text-gray-600 dark:text-white">Developer</span> <span role="img" aria-label="Wave" className="wave-emoji inline-block animate-wave">👋</span>
         
             </h2>
             <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
@@ -115,7 +116,7 @@ export default function ContactSignUp() {
             </p>
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
               <a href="https://github.com/Brosey27"><AiFillGithub /></a>
-              <a href="#"><AiFillLinkedin /></a>
+              <a href="https://www.linkedin.com/in/jordan-brose-ab0a47186/"><AiFillLinkedin /></a>
               <a href="#"><AiFillMail /></a>
             </div>
             <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96">
@@ -207,7 +208,7 @@ export default function ContactSignUp() {
                className="rounded-lg object-cover w-100 h-100 responsive"
               /></a>
               <h2 className="text-teal-500 text-2xl text-center pt-3 font-bold">Finance Tracker</h2>
-              <p className="text-sm py-2 leading-8 text-gray-800 dark:text-gray-200 flex text-center">This is a minimalistic production-ready Finance Tracker app built with Next.js 13, Tailwind CSS and Firebase. The app includes security using user authentication, protected routes, data storage using Firebase Firestore and the ability to login via google or a demo user account.</p>
+              <p className="text-sm py-2 leading-8 text-gray-800 dark:text-gray-200 flex text-center font-medium">This is a minimalistic production-ready Finance Tracker app built with Next.js 13, Tailwind CSS and Firebase. The app includes security using user authentication, protected routes, data storage using Firebase Firestore and the ability to login via google or a demo user account.</p>
               <div className="text-lg flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
               <a href="https://github.com/Brosey27/finance-tracker-v2"><AiFillGithub /></a>
               <a href="https://finance-tracker-v2-pi.vercel.app/#stats"><AiFillCaretRight /></a>
@@ -220,7 +221,7 @@ export default function ContactSignUp() {
                className="rounded-lg object-cover w-100 h-100 responsive"
               /></a>
                <h2 className="text-teal-500 text-2xl text-center pt-3 font-bold">Data Finance</h2>
-              <p className="text-sm py-2 leading-8 text-gray-800 dark:text-gray-200 flex text-center">This fully responsive project was built by employing React, Next.js and Tailwind. It also uses heavy js coding to create a typewriter effect for some text animation in the Hero section. UseState hook to toggle the mobile side drawer menu. Import “React-Icons” dependency for social icons. Incorporates both flexbox and grid layouts.</p>
+              <p className="text-sm py-2 leading-8 text-gray-800 dark:text-gray-200 flex text-center font-medium">This fully responsive project was built by employing React, Next.js and Tailwind. It also uses heavy js coding to create a typewriter effect for some text animation in the Hero section. UseState hook to toggle the mobile side drawer menu. Import “React-Icons” dependency for social icons. Incorporates both flexbox and grid layouts.</p>
               <div className="text-lg flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
               <a href="https://github.com/Brosey27/Data-Finance"><AiFillGithub /></a>
               <a href="https://data-finance-2-rdfy10oht-brosey27.vercel.app/"><AiFillCaretRight /></a>
@@ -233,7 +234,7 @@ export default function ContactSignUp() {
                 className="rounded-lg object-cover responsive w-100 h-100"
               /></a>
                <h2 className="text-teal-500 text-2xl text-center pt-3 font-bold">Crypto Webpage</h2>
-              <p className="text-sm py-2 leading-8 text-gray-800 dark:text-gray-200 flex text-center">Refi is a crypto app that allows users to search for information about various cryptocurrencies in real-time. This project allowed me to become more efficient in incorporating API's into my web design by utilising React.</p>
+              <p className="text-sm py-2 leading-8 text-gray-800 dark:text-gray-200 flex text-center font-medium">Refi is a crypto app that allows users to search for information about various cryptocurrencies in real-time. This project allowed me to become more efficient in incorporating API's into my web design by utilising React.</p>
               <div className="text-lg flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
               <a href="https://github.com/Brosey27/Crypto-Webpage"><AiFillGithub /></a>
               <a href="https://crypto-webpage.vercel.app/"><AiFillCaretRight /></a>
@@ -241,15 +242,15 @@ export default function ContactSignUp() {
             </div>
             {/* Project 4*/}
             <div className="basis-1/3 flex-1 shadow-md border-2 overflow-hidden dark:border-gray-700">
-              <a href="https://brosey27.github.io/GoogleClone/"><Image
-               alt="google-project"  src={Google}
+              <a href="https://codeducation.vercel.app/"><Image
+               alt="google-project"  src={Project4}
                className="rounded-lg object-cover w-100 h-100 responsive"
               /></a>
-              <h2 className="text-teal-500 text-2xl text-center pt-3 font-bold">Google Clone</h2>
-              <p className="text-sm py-2 leading-8 text-gray-800 dark:text-gray-200 flex text-center">In this project I utilised vanilla HTML,CSS and JS to build the google search engine from scratch and added functionality where the user can search anything and a new tab would be opened up redirecting the user to their relevant search query.</p>
+              <h2 className="text-teal-500 text-2xl text-center pt-3 font-bold">Code Education</h2>
+              <p className="text-sm py-2 leading-8 text-gray-800 dark:text-gray-200 flex text-center font-medium">By utilising Next.JS and Tailwind CSS I built this simple website that outlines the road-map for front-end development. Users can systematically go through each section in order to learn the key aspects of front-end development.</p>
               <div className="text-lg flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
-              <a href="https://github.com/Brosey27/GoogleClone"><AiFillGithub /></a>
-              <a href="https://brosey27.github.io/GoogleClone/"><AiFillCaretRight /></a>
+              <a href="https://github.com/Brosey27/codeducation"><AiFillGithub /></a>
+              <a href="https://codeducation.vercel.app/"><AiFillCaretRight /></a>
             </div>
             </div>
           </div>
