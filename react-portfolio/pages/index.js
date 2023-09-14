@@ -33,6 +33,7 @@ import EXPRESS from "../public/express.png";
 import Project4 from "../public/Project4.png";
 
 
+
 import {
   AiFillTwitterCircle,
   AiFillLinkedin,
@@ -43,7 +44,12 @@ import {
   
 } from "react-icons/ai";
 
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
+
+
+
+ 
+ 
 
 export default function ContactSignUp() {
   const [formData, setFormData] = useState({
@@ -65,6 +71,8 @@ export default function ContactSignUp() {
     // For demonstration purposes, we'll just set the submitted state to true
     setSubmitted(true);
   };
+
+  
 
 
     const [darkMode, setDarkMode] = useState(true);
@@ -91,9 +99,9 @@ export default function ContactSignUp() {
                 />
                 </li>
               <li>
-                <a
+                 <a href="mailto:jbrose.dev@gmail.com"
                   className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8"
-                  href="#contact"
+                  
                 >
                   Contact
                 </a>
@@ -117,7 +125,7 @@ export default function ContactSignUp() {
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
               <a href="https://github.com/Brosey27"><AiFillGithub /></a>
               <a href="https://www.linkedin.com/in/jordan-brose-ab0a47186/"><AiFillLinkedin /></a>
-              <a href="#"><AiFillMail /></a>
+              <a href="mailto:jbrose.dev@gmail.com"><AiFillMail /></a>
             </div>
             <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96">
               <Image alt="home-logo" src={PROFILE} className="fill object-cover" priority={true} />
@@ -142,12 +150,7 @@ export default function ContactSignUp() {
           <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
               <Image alt="code-logo"
               src={code} className="w-20 h-20"/>
-              <h3 className="text-lg font-medium pt-8 pb-2 text-black">
-                Always improving and adapting
-              </h3>
-              <p className="py-2 text-black">
-                I understand the importance of being flexible in the tech industry. This is why I am continuously learning and implementing new technologies in order to maintain peak efficiency.
-              </p>
+             
                {/* Front-end Tech Stack */}
           <div className="flex ml-1 gap-3 items-center md:px-20 lg:px-40 flex-col"> {/* Add 'flex-col' class to center items vertically */}
           <h2 className="text-teal-600 py-4 text-xl font-bold">Front-End Tech Stack</h2>
@@ -256,6 +259,7 @@ export default function ContactSignUp() {
           </div>
         </section>
 
+       
         {/* Contact */}
         <section id="contact" className="py-10 dark:bg-gray-900">
   <div className="signup-container flex flex-col md:flex-row rounded-lg shadow-md dark:bg-gray-900 overflow-hidden">
@@ -325,3 +329,4 @@ export default function ContactSignUp() {
     </div>
   );
   }
+ 
