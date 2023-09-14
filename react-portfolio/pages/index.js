@@ -194,14 +194,8 @@ export default function ContactSignUp() {
         {/* Projects */}
         <section className="py-10">
           <div>
-            <h4 className="text-3xl py-1 text-teal-500 dark:text-teal-500 font-bold">Each project is a unique piece of development 🧩</h4>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200 font-medium">
-              Since the beginning of my journey as a self-taught
-              developer, I have always tried  to 
-              <span className="text-teal-500"> challenge </span>
-              myself to create <span className="text-teal-500">useful </span>
-              digital products for consumer use. Here are a handful of projects that outline my development.
-            </p>
+            <h4 className="text-3xl py-1 text-center text-teal-500 dark:text-teal-500 font-bold">Each project is a unique piece of development 🧩</h4>
+           
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap ">
             {/* Project 1 */}
